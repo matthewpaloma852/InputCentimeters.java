@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+	
+			static Scanner scan = new Scanner(System.in);
+		 static double Centimeter_Inch = 2.54;
+		 static int Inches_Foot = 12;
+		 
+		  public static void main(String[] args) 
+		 {
+		
+		int feet; //variable to store feet
+        int inches;//variable to store inches
+        int  total_inches;//variable to store total of inches
+        double centimeters;//variable to store length in centimeters
+        
+        
+        System.out.print("Enter feet: ");
+        feet = scan.nextInt();
+        System.out.print("Enter inches: ");
+        inches = scan.nextInt();
+        
+        System.out.println("\nThe number did you input are "+ feet + " for feet so \n");
+        
+        total_inches = Inches_Foot * feet + inches;
+        
+       System.out.print("The total number is = " + total_inches);
+       
+       centimeters = total_inches * Centimeter_Inch;
+      
+       System.out.println(" and the number of centimeters is = " + centimeters) ;
+       
+
+	}
+}
