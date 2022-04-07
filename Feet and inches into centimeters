@@ -1,0 +1,46 @@
+//Matthew R. Paloma
+/*This program Convert the measurements in
+feet and inches into centimeters using the formula given that 1 inch equal to 2.54 centimeters */
+import java.util.Scanner;
+
+public class Main {
+	
+			static Scanner scan = new Scanner(System.in);
+		 static double Centimeter_Inch = 2.54;
+		 static int Inches_Foot = 12;
+		 
+		  public static void main(String[] args) 
+		 {
+		//declare variables
+		int feet;     //variable to store feet
+
+        int inches;     //variable to store inches
+
+        int  total_inches;    //variable to store total of inches
+
+        double centimeters;    //variable to store length in centimeters
+
+        
+        
+        System.out.print("Enter length of feet: "); // Step 1 
+        feet = scan.nextInt(); // Step 2: make input user to Declare the variable of feet
+        System.out.print("Enter length of inches: ");//step 3
+        inches = scan.nextInt(); //step 4: Declare the variable of inches
+        
+        System.out.println("\nThe number did you input are "+ feet + " for feet so \n"); //step 5
+        
+        total_inches = Inches_Foot * feet + inches; //step 6
+        
+       System.out.print("The total number is = " + total_inches); //step 7
+       
+       centimeters = total_inches * Centimeter_Inch; //step 8
+      
+       System.out.println(" and the number of centimeters is = " + centimeters) ; //step 9
+       
+       /* The uses/purpose of the comment on the program to show the step of algorithms */ 
+       
+       
+       
+       
+
+	}
