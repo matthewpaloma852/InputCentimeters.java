@@ -1,35 +1,28 @@
 import java.util.Scanner;
-
-public class Main {
-	
-			static Scanner scan = new Scanner(System.in);
-		 static double Centimeter_Inch = 2.54;
-		 static int Inches_Foot = 12;
-		 
-		  public static void main(String[] args) 
-		 {
+public class MATTBUANG {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
 		
-		int feet; //variable to store feet
-        int inches;//variable to store inches
-        int  total_inches;//variable to store total of inches
-        double centimeters;//variable to store length in centimeters
-        
-        
-        System.out.print("Enter feet: ");
-        feet = scan.nextInt();
-        System.out.print("Enter inches: ");
-        inches = scan.nextInt();
-        
-        System.out.println("\nThe number did you input are "+ feet + " for feet so \n");
-        
-        total_inches = Inches_Foot * feet + inches;
-        
-       System.out.print("The total number is = " + total_inches);
-       
-       centimeters = total_inches * Centimeter_Inch;
-      
-       System.out.println(" and the number of centimeters is = " + centimeters) ;
-       
+		double lengthINfeet, lengthINinches;
+		double feetTOinches, inchesTOcentimeter, feetANDinches;
+		final double cm = 2.54;
+		final double inches = 12;
+		
 
+		System.out.print("Enter length in feet: ");
+		lengthINfeet = scan.nextDouble();
+		System.out.print("Enter length in inches: ");
+		lengthINinches = scan.nextDouble();
+		
+		feetTOinches = lengthINfeet * inches;
+		feetANDinches = feetTOinches + lengthINinches;
+		inchesTOcentimeter = feetANDinches * cm;
+		
+		System.out.print("\n\nThe length in feet you entered is " + lengthINfeet +
+							" and \nthe length you entered in inches  is " + lengthINinches+"\n\n");
+		System.out.print(lengthINfeet + " feet is equal to " + feetTOinches+" inches\n");
+		System.out.print(feetTOinches + " inches is added to "+ lengthINinches + " inches is equal to "+feetANDinches+" inches\n");
+		System.out.print(feetANDinches + " inches is converted to cm is equal to "+ inchesTOcentimeter+ " centimeter");
 	}
+
 }
