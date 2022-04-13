@@ -1,0 +1,42 @@
+/*Matthew R. Paloma
+BSIS 1-2B
+This Program Make change that Given any amount of Cent that equivalent or compute inyo half dollar, quarter, dime, nickel and pennies to be returned. */
+
+import java.util.Scanner;
+
+public class Make_Change{
+	static Scanner console = new Scanner(System.in);
+	
+	//Name of Constant
+	static final int Half_Dollar= 50;
+	static final int Quarter = 25;
+	static final int Dime = 10;
+	static final int Nickel= 5;
+	
+	public static void main(String[] args){
+		
+		int change; //Declaring Variable
+		
+		//Main Algorith
+		System.out.print("Enter the change in Cents: "); // input the user any amount og Cents.
+		change = console.nextInt();
+		 System.out.println();
+		 System.out.println("The change you entered is "+ change);
+		 
+		 System.out.println("The number of half dollars "+ "to be returned is "+ change / Half_Dollar);
+		 change = change % Half_Dollar;
+		 
+		 System.out.println("The number of quarters to be "+ "returned is "+ change / Quarter);
+		 change = change % Quarter;
+		 
+		 System.out.println("The number of dimes to be "+ "returned is "+ change / Dime);
+		 change = change % Dime;
+		 
+		 System.out.println("The number of nickels to be "+ "returned is " + change / Nickel);
+		 change = change % Nickel;
+		 
+		 System.out.println("The number of pennies to be "+ "returned is " + change);
+		 
+	}
+}
+		 
